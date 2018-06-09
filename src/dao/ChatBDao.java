@@ -91,18 +91,20 @@ public class ChatBDao {
 
 	public void  QualTentativaCorreta(int qualtentativa){
 		if(qualtentativa==1){
-
+			String sqlSelect = "insert into tentativas (primeira_tentativa) values (?)";
 
 		}else if(qualtentativa==2){
+			String sqlSelect = "insert into tentativas (segunda_tentativa) values (?)";
 
 
 		}else if(qualtentativa==3){
+			String sqlSelect = "insert into tentativas (terceira_tentativa) values (?)";
 
 
 		}
 
 	}
-
+								/*Não ta funcionando !!!!*/
 	public int PegaQuantidadeDeAtendimentoHumano(){
 		int quantidadeDeElementos = 0;
 		String sqlSelect = "SELECT AtendimentosHumano FROM QuantidadeDeAtendimento";

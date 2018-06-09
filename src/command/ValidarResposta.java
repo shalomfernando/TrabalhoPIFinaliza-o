@@ -17,7 +17,7 @@ import service.ChatService;
 public class ValidarResposta implements Command {
 
 	public static final String CHAT = "chat";
-	public static final String RESPOSTA_NAO_ENCONTRADA = "Desculpe, mas não tenho a resposta para sua pergunta! Você pode reformular a sua pergunta?";
+	public static final String RESPOSTA_NAO_ENCONTRADA = "Desculpe, mas nÃ£o tenho a resposta para sua pergunta! VocÃª pode reformular a sua pergunta?";
 	public static final String ATT_PERG = "pergunta";
 	public ChatService chatService = new ChatService();
 	ChatBDao chatJ = new ChatBDao();

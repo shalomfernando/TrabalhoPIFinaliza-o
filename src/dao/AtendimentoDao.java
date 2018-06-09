@@ -34,4 +34,6 @@ public class AtendimentoDao {
 		}
 		return atd.getId_atendimento();
 	}
+
+
 }
