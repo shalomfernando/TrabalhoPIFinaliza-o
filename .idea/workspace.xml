@@ -8,10 +8,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f735f56b-5ca1-4de0-8fb6-009244a54f9a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ChatBootOrigin2_Web2_exploded/WEB-INF/classes/command/ValidarResposta.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/ChatBootOrigin2_Web2_exploded/WEB-INF/classes/command/ValidarResposta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/ValidarResposta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ValidarResposta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/AtendimentoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/AtendimentoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/PageFinal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/PageFinal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/command/ValidarResposta.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/command/ValidarResposta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/ServletChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/ServletChat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/dao/ChatBDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/dao/ChatBDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/ChatBootOrigin2_Web2_exploded/WEB-INF/classes/command/ContarTentativas.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/ChatBootOrigin2_Web2_exploded/WEB-INF/classes/command/ContarTentativas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/ChatBootOrigin2_Web2_exploded/WEB-INF/classes/controller/ServletChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/ChatBootOrigin2_Web2_exploded/WEB-INF/classes/controller/ServletChat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/ChatBootOrigin2_Web2_exploded/WEB-INF/classes/dao/ChatBDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/ChatBootOrigin2_Web2_exploded/WEB-INF/classes/dao/ChatBDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/ContarTentativas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ContarTentativas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ServletChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ServletChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/ChatBDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ChatBDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pacote/SessaoUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacote/SessaoUsuario.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,55 +55,73 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="chat: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="chat@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="chat: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="tentativas: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/63f32b6d-a654-4387-b8a1-eb3af78a7df7/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AtendimentoService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/service/AtendimentoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AtendimentoDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/AtendimentoDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChatBDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dao/ChatBDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/63f32b6d-a654-4387-b8a1-eb3af78a7df7/console.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="367">
+                  <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SessaoUsuario.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/pacote/SessaoUsuario.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="292">
+                  <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#1064#1065#0" expanded="true" />
+                    <element signature="e#1125#1126#0" expanded="true" />
+                    <element signature="e#1159#1160#0" expanded="true" />
+                    <element signature="e#1220#1221#0" expanded="true" />
+                    <element signature="e#1254#1255#0" expanded="true" />
+                    <element signature="e#1275#1276#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ChatBDao.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/ChatBDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="77">
+                  <caret line="143" column="24" lean-forward="true" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PageFinal.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/WebContent/PageFinal.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="186">
+                  <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="PageFinal.jsp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/WebContent/PageFinal.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="27" selection-start-line="27" selection-end-line="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,9 +132,13 @@
         <option value="$PROJECT_DIR$/src/dao/ConnectionFactory.java" />
         <option value="$PROJECT_DIR$/src/dao/PalavraChaveDao.java" />
         <option value="$PROJECT_DIR$/src/command/ValidarResposta.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/63f32b6d-a654-4387-b8a1-eb3af78a7df7/console.sql" />
         <option value="$PROJECT_DIR$/src/dao/AtendimentoDao.java" />
+        <option value="$PROJECT_DIR$/src/controller/ServletChat.java" />
+        <option value="$PROJECT_DIR$/src/command/ContarTentativas.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/63f32b6d-a654-4387-b8a1-eb3af78a7df7/console.sql" />
         <option value="$PROJECT_DIR$/src/dao/ChatBDao.java" />
+        <option value="$PROJECT_DIR$/src/pacote/SessaoUsuario.java" />
+        <option value="$PROJECT_DIR$/WebContent/PageFinal.jsp" />
       </list>
     </option>
   </component>
@@ -156,7 +185,18 @@
               <item name="ChatBootOrigin2" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChatBootOrigin2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="pacote" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatBootOrigin2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatBootOrigin2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatBootOrigin2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatBootOrigin2" type="462c0819:PsiDirectoryNode" />
+              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,7 +212,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect" value="GenericSQL&#10;MySQL" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -320,15 +360,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528558486893</updated>
-      <workItem from="1528558495213" duration="8956000" />
+      <workItem from="1528558495213" duration="13127000" />
     </task>
+    <task id="LOCAL-00001" summary="Reestrutura">
+      <created>1528569109994</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1528569109994</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8956000" />
+    <option name="totallyTimeSpent" value="13127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1608" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -338,7 +387,7 @@
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info anchor="bottom" id="SQL Generator" weight="0.32896462" />
-      <window_info active="true" anchor="right" id="Database" visible="true" />
+      <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -353,7 +402,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32896462" />
       <window_info anchor="bottom" id="Terminal" weight="0.32896462" />
       <window_info anchor="bottom" id="Database Console" visible="true" weight="0.32896462" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12375" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" side_tool="true" />
@@ -371,6 +420,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reestrutura" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reestrutura" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -378,15 +431,50 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="9" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/dao/ChatBDao.java</url>
+          <line>205</line>
+          <properties class="dao.ChatBDao" method="PegaQuantidadeDeAtendimentoHumano">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/dao/ChatBDao.java</url>
+          <line>132</line>
+          <properties class="dao.ChatBDao" method="InserirQuantidadeDeAtendimentoHumano">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/dao/ChatBDao.java</url>
+          <line>91</line>
+          <properties class="dao.ChatBDao" method="QualTentativaCorreta">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/command/ContarTentativas.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="10" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>int quantidade = dao.PegaQuantidadeDeAtendimentoHumano();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>palavra</expression-string>
         <language-id>JAVA</language-id>
@@ -427,34 +515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/UsuarioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/ChatBootOrigin/src/pacote/SessaoUsuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/PageFinal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/command/ContarTentativas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -465,38 +529,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pacote/SessaoUsuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ServletChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/command/ChatBot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/command/ButtonSim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ServletController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -528,10 +564,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/63f32b6d-a654-4387-b8a1-eb3af78a7df7/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/dao/Atend_ConversaDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        <state relative-caret-position="-668">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/chatt.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-316" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/AtendimentoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/RespostaDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/UsuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ClienteDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/Atend_ConversaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -542,24 +618,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/Atend_ConversaDao.java">
+    <entry file="file://$PROJECT_DIR$/src/dao/ConversaDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-668">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="352">
+          <caret line="27" column="58" lean-forward="true" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/AtendimentoDao.java">
+    <entry file="file://$PROJECT_DIR$/src/command/ContarTentativas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="368">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command/ButtonSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ServletController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/63f32b6d-a654-4387-b8a1-eb3af78a7df7/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ServletChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/UsuarioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ChatBDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+        <state relative-caret-position="77">
+          <caret line="143" column="24" lean-forward="true" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pacote/SessaoUsuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/PageFinal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>

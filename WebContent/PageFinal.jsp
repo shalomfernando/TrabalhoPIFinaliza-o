@@ -22,7 +22,31 @@
 			SessaoUsuario sesseao = (SessaoUsuario) session.getAttribute("SessaoUsuario");
 
 			out.println(sesseao.getTempoSessao());
-		%>s
+		%>s</br>
+			Quantidade resolvida na primeira tentativa:
+			<%
+
+				out.println(sesseao.getPegaPrimeira());
+			%>
+			</br>
+			Quantidade resolvida na Segunda tentativa:
+			<%
+
+				out.println(sesseao.getPegaSegunda());
+			%>
+			</br>
+			Quantidade resolvida na Terceira tentativa:
+			<%
+
+				out.println(sesseao.getPegaTerceira());
+			%>
+			</br>
+
+			Quantidade encaminhada para o atendente:
+			<%
+
+				out.println(sesseao.getContatoHumano());
+			%>
 			</br>
 
 		</div>

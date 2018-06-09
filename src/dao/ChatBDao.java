@@ -92,28 +92,126 @@ public class ChatBDao {
 	public void  QualTentativaCorreta(int qualtentativa){
 		if(qualtentativa==1){
 			String sqlSelect = "insert into tentativas (primeira_tentativa) values (?)";
+			try(Connection conn = ConnectionFactory.obtemConexao();
+				PreparedStatement stm = conn.prepareStatement(sqlSelect);){
+				stm.setInt(1,qualtentativa);
+				stm.execute();
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 
 		}else if(qualtentativa==2){
 			String sqlSelect = "insert into tentativas (segunda_tentativa) values (?)";
+			try(Connection conn = ConnectionFactory.obtemConexao();
+				PreparedStatement stm = conn.prepareStatement(sqlSelect);){
+				stm.setInt(1,qualtentativa);
+				stm.execute();
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 
 
 		}else if(qualtentativa==3){
 			String sqlSelect = "insert into tentativas (terceira_tentativa) values (?)";
+			try(Connection conn = ConnectionFactory.obtemConexao();
+				PreparedStatement stm = conn.prepareStatement(sqlSelect);){
+				stm.setInt(1,qualtentativa);
+				stm.execute();
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 
 
 		}
 
+
 	}
-								/*Não ta funcionando !!!!*/
-	public int PegaQuantidadeDeAtendimentoHumano(){
-		int quantidadeDeElementos = 0;
-		String sqlSelect = "SELECT AtendimentosHumano FROM QuantidadeDeAtendimento";
+
+	public void InserirQuantidadeDeAtendimentoHumano(int valor){
+		String sqlSelect = "INSERT INTO tentativas (atendimento_humano) values (?)";
+		try(Connection conn = ConnectionFactory.obtemConexao();
+			PreparedStatement stm = conn.prepareStatement(sqlSelect);){
+			stm.setInt(1,valor);
+			stm.execute();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	public int pegaQuantidadeResolvidaDePrimeira(){
+		int quantidadeDeElementos=0;
+		String sqlSelect = "select primeira_tentativa from tentativas";
 		try (Connection conn = ConnectionFactory.obtemConexao();
 			 PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
 			try (ResultSet rs = stm.executeQuery();) {
 				while (rs.next()) {
 					quantidadeDeElementos = new Integer(quantidadeDeElementos);
-					quantidadeDeElementos = rs.getInt("AtendimentosHumano");
+					quantidadeDeElementos = rs.getInt("primeira_tentativa")+quantidadeDeElementos;
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} catch (SQLException e1) {
+			System.out.print(e1.getStackTrace());
+		}
+
+
+		return quantidadeDeElementos;
+	}
+	public int pegaQuantidadeResolvidaDeTerceira(){
+		int quantidadeDeElementos=0;
+		String sqlSelect = "select terceira_tentativa from tentativas";
+		try (Connection conn = ConnectionFactory.obtemConexao();
+			 PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
+			try (ResultSet rs = stm.executeQuery();) {
+				while (rs.next()) {
+					quantidadeDeElementos = new Integer(quantidadeDeElementos);
+					quantidadeDeElementos = rs.getInt("terceira_tentativa")+quantidadeDeElementos;
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} catch (SQLException e1) {
+			System.out.print(e1.getStackTrace());
+		}
+
+
+		return quantidadeDeElementos;
+	}
+	public int pegaQuantidadeResolvidaDeSegunda(){
+		int quantidadeDeElementos=0;
+		String sqlSelect = "select segunda_tentativa from tentativas";
+		try (Connection conn = ConnectionFactory.obtemConexao();
+			 PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
+			try (ResultSet rs = stm.executeQuery();) {
+				while (rs.next()) {
+					quantidadeDeElementos = new Integer(quantidadeDeElementos);
+					quantidadeDeElementos = rs.getInt("segunda_tentativa")+quantidadeDeElementos;
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} catch (SQLException e1) {
+			System.out.print(e1.getStackTrace());
+		}
+
+
+		return quantidadeDeElementos;
+	}
+
+
+	public int PegaQuantidadeDeAtendimentoHumano(){
+		int quantidadeDeElementos = 0;
+		String sqlSelect = "select atendimento_humano from tentativas";
+		try (Connection conn = ConnectionFactory.obtemConexao();
+			 PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
+			try (ResultSet rs = stm.executeQuery();) {
+				while (rs.next()) {
+					quantidadeDeElementos = new Integer(quantidadeDeElementos);
+					quantidadeDeElementos = rs.getInt("atendimento_humano")+quantidadeDeElementos;
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();

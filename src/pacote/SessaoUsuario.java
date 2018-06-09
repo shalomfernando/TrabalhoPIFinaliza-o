@@ -1,5 +1,7 @@
 package pacote;
 
+import dao.ChatBDao;
+
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -26,7 +28,7 @@ public class SessaoUsuario {
 
 
 
-
+    ChatBDao dao = new ChatBDao();
     public void addMensagem(String nome, String mensagem) {
        
     	conversasAt.add(new MensagemAt(nome,mensagem));
@@ -38,6 +40,19 @@ public class SessaoUsuario {
 
     public  long getTempoSessao() {
         return Duration.between(inicioConversa, LocalDateTime.now()).get(ChronoUnit.SECONDS);
+    }
+    public int getContatoHumano(){
+
+        return dao.PegaQuantidadeDeAtendimentoHumano();
+    }
+    public int getPegaPrimeira(){
+        return dao.pegaQuantidadeResolvidaDePrimeira();
+    }
+    public int getPegaSegunda(){
+        return dao.pegaQuantidadeResolvidaDeSegunda();
+    }
+    public int getPegaTerceira(){
+        return dao.pegaQuantidadeResolvidaDeTerceira();
     }
 
     int id;

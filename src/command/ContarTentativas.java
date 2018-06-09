@@ -1,5 +1,7 @@
 package command;
 
+import dao.ChatBDao;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +17,9 @@ public class ContarTentativas implements Command{
             FoiProAtendente++;
         }
 
+        ChatBDao dao = new ChatBDao();
+        dao.InserirQuantidadeDeAtendimentoHumano(FoiProAtendente);
+        int quantidade =dao.PegaQuantidadeDeAtendimentoHumano();
 
        RequestDispatcher view = request.getRequestDispatcher("index2.jsp");
         view.forward(request, response);

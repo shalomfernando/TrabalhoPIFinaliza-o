@@ -11,6 +11,8 @@ import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
+import dao.AtendimentoDao;
+import dao.ChatBDao;
 import dao.ConversaAtendimentoDAO;
 import pacote.Cliente;
 import pacote.SessaoUsuario;
@@ -43,7 +45,6 @@ public class ServletChat extends HttpServlet {
 			Date data = new Date();
 			SimpleDateFormat hora_format = new SimpleDateFormat("HH:mm");
 			String mostra_hora = hora_format.format(data);
-
 
 
 			sala += "<span style=\"color:" + color + "\">" + nick + "</span>" + ": " + msg + "<br/>"+mostra_hora+"<br/>";
